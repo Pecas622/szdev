@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Logo a la izquierda, links a la derecha */
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0f172a;
+    /* Azul oscuro */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    cursor: default;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    /* Para que los li estén en fila */
+    gap: 2rem;
+    /* Espacio entre links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #60a5fa;
+    /* Azul claro al pasar el mouse */
+}
