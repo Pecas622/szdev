@@ -17,6 +17,14 @@ const categorias = [
             { titulo: "Integración con redes, WhatsApp, email", descripcion: "" },
         ],
     },
+    {
+        nombre: "Mantenimiento y Soporte",
+        servicios: [
+            { titulo: "Actualización de contenido", descripcion: "Modificar textos, imágenes y productos." },
+            { titulo: "Soporte técnico", descripcion: "Resolución de problemas y consultas." },
+            { titulo: "Monitoreo y backups", descripcion: "Seguridad y respaldo regular de tu sitio." },
+        ],
+    },
 ]
 
 const paquetes = [
@@ -34,6 +42,11 @@ const paquetes = [
         nombre: "Pack Premium",
         serviciosIncluidos: ["Landing page", "Portafolio", "Integración completa", "SEO básico"],
         precio: "$100 USD",
+    },
+    {
+        nombre: "Pack Mantenimiento",
+        serviciosIncluidos: ["Actualización de contenido", "Soporte técnico", "Monitoreo y backups"],
+        precio: "$30 USD / mes",
     },
 ]
 
