@@ -57,10 +57,20 @@
     opacity: 0.9;
 }
 
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-img img {
+    width: 100%;
+    height: auto;
     max-width: 500px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
 }
 
 /* ===== SERVICIOS ===== */
@@ -158,10 +168,26 @@
     padding: 1.2rem 3rem;
     border-radius: 50px;
 }
-/* Eliminar separación visual entre la última sección y el footer */
 
+/* Eliminar separación visual entre la última sección y el footer */
 footer {
     margin-top: 0 !important;
     padding-top: 1rem !important;
 }
 
+/* ===== RESPONSIVE HERO ===== */
+@media (max-width: 900px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3rem 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-img img {
+        max-width: 90%;
+    }
+}
