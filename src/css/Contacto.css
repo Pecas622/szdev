@@ -1,0 +1,140 @@
+/* Variables globales */
+:root {
+    --color-fondo: #0d0d0d;
+    --color-fondo-sec: #1a1a2e;
+    --color-acento: #6c63ff;
+    --color-acento-sec: #00c9a7;
+    --color-texto: #ffffff;
+    --color-texto-sec: #bbb;
+    --color-bg-form: #f8f9fa;
+    --color-bg-form-sec: #e9ecef;
+    --color-acento-form: #0077cc;
+    --color-acento-form-hover: #005fa3;
+}
+.contacto {
+    padding: 3rem 1rem;
+    color: #fff;
+    text-align: center;
+    background: var(--color-fondo-sec);
+}
+
+/* TITULOS */
+.titulo-contacto {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.subtitulo-contacto {
+    color: var(--color-texto-sec);
+    margin-bottom: 2rem;
+}
+
+/* FORMULARIO */
+.formulario-contacto {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.fila {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    transition: 0.3s;
+}
+
+.input-group input,
+.input-group textarea {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+.input-group:focus-within {
+    border: 1px solid var(--color-acento);
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.4);
+}
+
+.icono-input {
+    margin-right: 10px;
+    color: var(--color-acento);
+    font-size: 1.2rem;
+}
+
+/* BOTÓN */
+.btn-enviar {
+    background: var(--color-acento);
+    border: none;
+    padding: 0.9rem 2rem;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background: var(--color-acento-sec);
+    transform: translateY(-2px);
+}
+
+/* CARDS DE CONTACTO */
+.info-contacto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-contacto {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card-contacto:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.icono-card {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+    color: var(--color-acento);
+}
+
+.card-contacto h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.card-contacto p {
+    color: var(--color-texto-sec);
+}

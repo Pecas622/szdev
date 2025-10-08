@@ -1,0 +1,179 @@
+/* Sección digitalización */
+:root {
+    --color-fondo: #0d0d0d;
+    --color-fondo-sec: #1a1a2e;
+    --color-acento: #6c63ff;
+    --color-acento-sec: #00c9a7;
+    --color-texto: #ffffff;
+    --color-texto-sec: #bbb;
+}
+
+/* SECCIÓN DIGITALIZACIÓN */
+.digitalizacion {
+    margin-bottom: 50px;
+    text-align: center;
+    background: var(--color-fondo-sec);
+    padding: 40px 20px;
+    border-radius: 20px;
+}
+
+.digitalizacion h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: var(--color-texto);
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.grid-digitalizacion {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card-digitalizacion {
+    background: linear-gradient(135deg, var(--color-acento), var(--color-acento-sec));
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 280px;
+    color: var(--color-texto);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+.card-digitalizacion:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.icono {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.card-digitalizacion h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-digitalizacion p {
+    font-size: 1rem;
+    color: var(--color-texto-sec);
+}
+
+/* GRID PROYECTOS */
+.grid-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Tarjetas de proyectos existentes, puedes adaptarlas al estilo */
+.card-proyecto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+.card-proyecto img {
+    width: 100%;
+    display: block;
+}
+
+.card-proyecto .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(13,13,13,0.85);
+    color: var(--color-texto);
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.card-proyecto:hover .overlay {
+    transform: translateY(0);
+}
+
+
+.proyectos {
+    padding: 5rem 10%;
+    background: #0d0d0d;
+    color: #fff;
+    text-align: center;
+}
+
+.proyectos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.proyectos .intro {
+    color: #bbb;
+    margin-bottom: 3rem;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card-proyecto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+
+.card-proyecto:hover {
+    transform: scale(1.05);
+}
+
+.card-proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Overlay estilo portfolio */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffb347;
+}
+
+.overlay p {
+    font-size: 1rem;
+    color: #ddd;
+}

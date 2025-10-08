@@ -1,0 +1,77 @@
+.footer {
+    background: var(--color-fondo-sec);
+    color: var(--color-texto);
+    padding: 3rem 1rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-contenedor {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+/* BLOQUE INFO */
+.footer-info h3 {
+    color: var(--color-acento);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* LINKS */
+.footer-links h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--color-acento-sec);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+    color: var(--color-texto-sec);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--color-acento);
+}
+
+/* REDES */
+.footer-redes h4 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--color-acento-sec);
+}
+
+.iconos-redes a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-texto);
+    transition: 0.3s;
+}
+
+.iconos-redes a:hover {
+    color: var(--color-acento);
+    transform: translateY(-3px);
+}
+
+/* COPYRIGHT */
+.footer-copy {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-texto-sec);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}

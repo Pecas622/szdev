@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales */
+:root {
+    --color-fondo: #0d0d0d;
+    --color-fondo-sec: #1a1a2e;
+    --color-acento: #6c63ff;
+    --color-acento-sec: #00c9a7;
+    --color-texto: #ffffff;
+    --color-texto-sec: #bbb;
+}
+
+/* ===== HERO ===== */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, var(--color-fondo), var(--color-fondo-sec));
+    color: var(--color-texto);
+    padding: 5rem 10%;
+    min-height: 80vh;
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-texto-sec);
+}
+
+.btn-contacto {
+    background: linear-gradient(45deg, var(--color-acento), var(--color-acento-sec));
+    color: var(--color-texto);
+    padding: 0.9rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn-contacto:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.hero-img img {
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SERVICIOS ===== */
+.servicios {
+    padding: 5rem 10%;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.servicio-card {
+    background: var(--color-fondo-sec);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.servicio-card .icono {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-acento);
+}
+
+.servicio-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* ===== SECCIÓN VENTAS ===== */
+.ventas {
+    padding: 5rem 10%;
+    background: linear-gradient(135deg, var(--color-fondo), var(--color-fondo-sec));
+    color: var(--color-texto);
+    text-align: center;
+}
+
+.ventas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.ventas-subtitulo {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #ccc;
+}
+
+.ventas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.ventas-card {
+    background: #1f1f2e;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ventas-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.ventas-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-acento);
+}
+
+.btn-contacto.grande {
+    font-size: 1.1rem;
+    padding: 1.2rem 3rem;
+    border-radius: 50px;
+}
+/* Eliminar separación visual entre la última sección y el footer */
+
+footer {
+    margin-top: 0 !important;
+    padding-top: 1rem !important;
+}
+

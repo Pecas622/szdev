@@ -52,36 +52,43 @@ const paquetes = [
 
 const Servicios = () => {
     return (
-        <div className="container servicios">
-            <h2>Servicios</h2>
-            <p>Ofrezco soluciones digitales personalizadas para que tu negocio crezca.</p>
+        <div className="servicios">
+            <header className="servicios-header">
+                <h2>Servicios</h2>
+                <p>Soluciones digitales pensadas para que tu negocio crezca y venda más 🚀</p>
+            </header>
 
-            {categorias.map((cat, i) => (
-                <section key={i} className="categoria-servicios">
-                    <h3>{cat.nombre}</h3>
-                    <ul className="lista-servicios">
-                        {cat.servicios.map(({ titulo, descripcion }, j) => (
-                            <li key={j}>
-                                <strong>{titulo}</strong>
-                                {descripcion && <> – {descripcion}</>}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-            ))}
+            {/* CATEGORÍAS */}
+            <section className="categorias">
+                {categorias.map((cat, i) => (
+                    <div key={i} className="categoria-card">
+                        <h3>{cat.nombre}</h3>
+                        <div className="servicios-grid">
+                            {cat.servicios.map(({ titulo, descripcion }, j) => (
+                                <div key={j} className="servicio-item">
+                                    <h4>{titulo}</h4>
+                                    <p>{descripcion}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                ))}
+            </section>
 
+            {/* PAQUETES */}
             <section className="paquetes">
-                <h3>Paquetes y ofertas</h3>
-                <div className="lista-paquetes">
+                <h3>Paquetes y Ofertas</h3>
+                <div className="paquetes-grid">
                     {paquetes.map(({ nombre, serviciosIncluidos, precio }, i) => (
-                        <div key={i} className="paquete">
+                        <div key={i} className="paquete-card">
                             <h4>{nombre}</h4>
                             <ul>
                                 {serviciosIncluidos.map((serv, k) => (
-                                    <li key={k}>{serv}</li>
+                                    <li key={k}>✔ {serv}</li>
                                 ))}
                             </ul>
                             <p className="precio">{precio}</p>
+                            <button className="btn-contratar">Quiero este pack</button>
                         </div>
                     ))}
                 </div>
